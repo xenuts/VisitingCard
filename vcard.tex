@@ -1,0 +1,183 @@
+% =========================================================================
+% File Name: c.tex
+% Last Modification Date: %G%     %U%
+% Current Version: %M%    %I%
+% File Creation Date: Sat Apr 20 22:52:24 1996
+% Author: Jan Erik Odegard  <odegard@ece.rice.edu>
+%
+% Copyright: All software, documentation, and related files in this
+%            distribution are Copyright (c) 1996  Rice University
+% =========================================================================
+\documentclass[11pt]{article} %A4: 297mm x 210mm
+\usepackage[dvips]{graphicx}
+\usepackage{latexsym}
+\usepackage{color}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage[left=0cm, top = 2cm]{geometry}
+\usepackage{times}
+\pagestyle{empty}
+
+\setlength{\textwidth}{18in}
+\setlength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{-1in}
+\setlength{\textheight}{10in}
+\setlength{\topmargin}{-1in}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Adobe Garamond Pro}
+\setCJKmainfont{楷体_GB2312} % 
+\setCJKfamilyfont{nwpulogo}{nwpulogo}
+%\XeTeXlinebreaklocale "zh" %
+%\XeTeXlinebreakskip = 0pt plus 1pt 
+
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     % 
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} %
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      %
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      %
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  %
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}  %
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}      %
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  %
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    %
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   %
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  %
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    %
+\newcommand{\nwpulogo}{\CJKfamily{nwpulogo}}
+%%%%% Images %%%%%%%
+\newcommand{\npuheadera}{\includegraphics[scale=0.21]{../../Images/h.eps}}
+\newcommand{\npuheaderb}{\includegraphics[scale=0.21]{../../Images/h2.eps}}
+
+\newcommand{\npulogo}{\includegraphics[scale=0.15]{../../Images/npulogo.eps}}
+\newcommand{\linkedinQR}{\includegraphics[scale=0.039]{../../Images/linkedin-qrcode.png}}
+\newcommand{\saiiplogo}{\includegraphics[scale=0.07]{../../Images/saiip_logo.png}}
+\newcommand{\npuname}{\includegraphics[scale=0.2]{../../Images/npuname.eps}}
+
+%%%%% Content %%%%%%%
+\newcommand{\fullnameEN}{Xiangzeng Zhou}
+\newcommand{\fullnameCN}{周\ \ 祥\ \ 增}
+
+\newcommand{\ptitleEN}{Ph.D. Student}
+\newcommand{\ptitleCN}{博士研究生}
+
+\newcommand{\affEN}{Northwestern Polytechnical University (NPU)}
+\newcommand{\affCN}{\nwpulogo 西\ \ \ \ 北\ \ \ \ 工\ \ \ \ 业\ \ \ \ 大\ \ \ \ 学}
+
+\newcommand{\labEN}{Speech and Image Information Processing Lab (SAIIP)}
+\newcommand{\labCN}{陕西省语音与图像信息处理重点实验室 (SAIIP)}
+
+\newcommand{\schoolEN}{School of Computer Science, NPU}
+\newcommand{\schoolCN}{计算机学院}
+
+\newcommand{\addrEN}{No. 127 West Youyi Road, Xi'an, China 710072}
+\newcommand{\addrCN}{地址：中国西安市友谊西路127号\ \ 邮编：710072}
+
+\newcommand{\labsiteEN}{www.nwpu-aslp.org}
+\newcommand{\labsiteCN}{站点： www.nwpu-aslp.org}
+
+\newcommand{\mobileEN}{+86-15934898828}
+\newcommand{\mobileCN}{+86-15934898828}
+
+\newcommand{\emailEN}{xzzhou@nwpu-aslp.org, xenuts@gmail.com}
+\newcommand{\emailCN}{xzzhou@nwpu-aslp.org, xenuts@gmail.com}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setlength{\unitlength}{1mm}
+\begin{picture}(220,240)(-3,0)
+  \multiput(0,0)(0, 56){4}{%
+    \multiput(0,0)(107,0){2}{
+      \begin{picture}(89,54)(0,0) % Bussiness Card Size = 89mm x 54 cm
+        \put(0, 0){\color{red}\line(0,1){10}}
+        \put(0, 0){\color{red}\line(1, 0){10}}
+        \put(0, 54){\color{green}\line(0,-1){10}}
+        \put(0, 54){\color{green}\line(1, 0){10}}
+        \put(89, 0){\color{cyan}\line(0,1){10}}
+        \put(89, 0){\color{cyan}\line(-1, 0){10}}              
+        \put(89, 54){\color{blue}\line(0,-1){10}}
+        \put(89, 54){\color{blue}\line(-1,0){10}}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+        \put(0,49.1){\npuheaderb}
+        \put(41.5,49.1){\npuheadera}
+        \put(5,27){\npulogo}
+        
+        \put(33,38){\Large\fullnameEN}
+        \put(40,33){\textsc{\scriptsize \ptitleEN}}
+        \put(26.5,25){\textsc{\scriptsize \affEN}}
+
+        \put(26,24){\color[rgb]{0.6,0.6,0}\line(1,0){59}}
+
+        \put(70, 8.2){\linkedinQR}
+       
+%        \put(12,17){\tiny \textcolor[rgb]{0.15,0.15,0.15}{\labEN}}
+%        \put(12,14.5){\tiny \textcolor[rgb]{0.15,0.15,0.15}{\schoolEN}}
+%        \put(12,12){\tiny \textcolor[rgb]{0.15,0.15,0.15}{\addrEN}}
+%        \put(12,9.5){\tiny \textcolor[rgb]{0.15,0.15,0.15}{\labsiteEN}}
+
+        \put(6,18){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\labEN}}
+        \put(6,15){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\schoolEN}}
+        \put(6,12){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\addrEN}}
+        \put(6,9){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\labsiteEN}}
+
+        \linethickness{1pt} 
+        \put(4,5){\color[rgb]{0.6,0.6,0}\line(1,0){81}}
+ 
+        \put(10,2){\textsc{\tiny Mobile:}}
+        \put(18,2){\tiny \mobileEN}
+
+        \put(42,2){\textsc{\tiny Email:}}
+        \put(49,2){\tiny \emailEN}
+ 
+        \end{picture}} }
+  \end{picture}
+  \newpage
+  \begin{picture}(220,240)(-3,0)
+  \multiput(0,0)(0, 56){4}{%
+    \multiput(0,0)(107,0){2}{
+      \begin{picture}(89,54)(0,0)     
+       \put(0, 0){\color{red}\line(0,1){10}}
+       \put(0, 0){\color{red}\line(1, 0){10}}
+
+       \put(0, 54){\color{green}\line(0,-1){10}}
+       \put(0, 54){\color{green}\line(1, 0){10}}
+
+       \put(89, 0){\color{cyan}\line(0,1){10}}
+       \put(89, 0){\color{cyan}\line(-1, 0){10}}
+              
+       \put(89, 54){\color{blue}\line(0,-1){10}}
+       \put(89, 54){\color{blue}\line(-1,0){10}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \put(0,49.1){\npuheaderb}
+        \put(41.5,49.1){\npuheadera}
+       \put(5,27){\npulogo}
+        
+        \put(44,37){\Large\fullnameCN}
+        \put(47,32){\textsc{\scriptsize \ptitleCN}}
+        \put(36,25){\textsc{\normalsize \affCN}}
+
+        \put(34,24){\color[rgb]{0.6,0.6,0}\line(1,0){51}}
+
+        \put(70, 8.2){\linkedinQR}
+       
+        \put(6,18){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\labCN}}
+        \put(6,15){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\schoolCN}}
+        \put(6,12){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\addrCN}}
+        \put(6,9){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\labsiteCN}}
+
+        \linethickness{1pt}
+        \put(4,5){\color[rgb]{0.6,0.6,0}\line(1,0){81}}
+
+        \put(10,2){\textsc{\tiny Mobile:}}
+        \put(18,2){\tiny \mobileCN}
+
+        \put(42,2){\textsc{\tiny Email:}}
+        \put(49,2){\tiny \emailCN}
+
+        \end{picture}} }
+  \end{picture}
+\end{document}
+
+

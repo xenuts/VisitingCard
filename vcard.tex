@@ -14,19 +14,19 @@
 \usepackage{color}
 \usepackage{fontspec}
 \usepackage{xeCJK}
-\usepackage[left=0cm, top = 2cm]{geometry}
+\usepackage[paperwidth=92mm, paperheight=56mm]{geometry}
 \usepackage{times}
 \pagestyle{empty}
 
-\setlength{\textwidth}{18in}
-\setlength{\oddsidemargin}{-1in}
-\setlength{\evensidemargin}{-1in}
-\setlength{\textheight}{10in}
-\setlength{\topmargin}{-1in}
+ \setlength{\textwidth}{92mm}
+ \setlength{\oddsidemargin}{-1in}
+ \setlength{\evensidemargin}{-1in}
+ \setlength{\textheight}{56mm}
+ \setlength{\topmargin}{-1in}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Adobe Garamond Pro}
-\setCJKmainfont{楷体_GB2312} % 
+\setCJKmainfont{KaiTi} % 
 \setCJKfamilyfont{nwpulogo}{nwpulogo}
 %\XeTeXlinebreaklocale "zh" %
 %\XeTeXlinebreakskip = 0pt plus 1pt 
@@ -43,19 +43,31 @@
 \newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   %
 \newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  %
 \newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    %
+\newcommand{\qihaos}{\fontsize{4pt}{\baselineskip}\selectfont}    %
 \newcommand{\nwpulogo}{\CJKfamily{nwpulogo}}
 %%%%% Images %%%%%%%
-\newcommand{\npuheadera}{\includegraphics[scale=0.21]{../../Images/h.eps}}
-\newcommand{\npuheaderb}{\includegraphics[scale=0.21]{../../Images/h2.eps}}
+\newcommand{\npuheadera}{\includegraphics[scale=0.204]{../../Images/h.eps}}
+\newcommand{\npuheaderb}{\includegraphics[scale=0.204]{../../Images/h2.eps}}
+\newcommand{\NPUCN}{\nwpulogo 西北工业大学}
+\newcommand{\XI}{\nwpulogo 西}
+\newcommand{\BEI}{\nwpulogo 北}
+\newcommand{\GONG}{\nwpulogo 工}
+\newcommand{\YE}{\nwpulogo 业}
+\newcommand{\DA}{\nwpulogo 大}
+\newcommand{\XUE}{\nwpulogo 学}
 
-\newcommand{\npulogo}{\includegraphics[scale=0.15]{../../Images/npulogo.eps}}
-\newcommand{\linkedinQR}{\includegraphics[scale=0.039]{../../Images/linkedin-qrcode.png}}
+\newcommand{\npulogo}{\includegraphics[scale=0.07]{../../Images/npulogo.eps}}
+
+
+%\newcommand{\npulogo}{\includegraphics[scale=0.065]{../../Images/npu-logo+name.eps}}
+\newcommand{\linkedinQR}{\includegraphics[scale=0.042]{../../Images/linkedin-qrcode.png}}
 \newcommand{\saiiplogo}{\includegraphics[scale=0.07]{../../Images/saiip_logo.png}}
 \newcommand{\npuname}{\includegraphics[scale=0.2]{../../Images/npuname.eps}}
+\newcommand{\xianbmy}{\includegraphics[scale=0.04]{../../Images/bmy.eps}}
 
 %%%%% Content %%%%%%%
 \newcommand{\fullnameEN}{Xiangzeng Zhou}
-\newcommand{\fullnameCN}{周\ \ 祥\ \ 增}
+\newcommand{\fullnameCN}{周祥增}
 
 \newcommand{\ptitleEN}{Ph.D. Student}
 \newcommand{\ptitleCN}{博士研究生}
@@ -78,106 +90,74 @@
 \newcommand{\mobileEN}{+86-15934898828}
 \newcommand{\mobileCN}{+86-15934898828}
 
-\newcommand{\emailEN}{xzzhou@nwpu-aslp.org, xenuts@gmail.com}
+\newcommand{\emailENa}{xzzhou@nwpu-aslp.org}
+\newcommand{\emailENb}{xenuts@gmail.com}
 \newcommand{\emailCN}{xzzhou@nwpu-aslp.org, xenuts@gmail.com}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 \setlength{\unitlength}{1mm}
-\begin{picture}(220,240)(-3,0)
-  \multiput(0,0)(0, 56){4}{%
-    \multiput(0,0)(107,0){2}{
-      \begin{picture}(89,54)(0,0) % Bussiness Card Size = 89mm x 54 cm
-        \put(0, 0){\color{red}\line(0,1){10}}
-        \put(0, 0){\color{red}\line(1, 0){10}}
-        \put(0, 54){\color{green}\line(0,-1){10}}
-        \put(0, 54){\color{green}\line(1, 0){10}}
-        \put(89, 0){\color{cyan}\line(0,1){10}}
-        \put(89, 0){\color{cyan}\line(-1, 0){10}}              
-        \put(89, 54){\color{blue}\line(0,-1){10}}
-        \put(89, 54){\color{blue}\line(-1,0){10}}
+\begin{picture}(92,56)(6.1,-12.9)
+  
+%\put(0.1, 0.1){\color{red}\line(0,1){10}}
+%\put(0.1, 0.1){\color{blue}\line(1,0){10}}
+%\put(0, 51.4){\npuheaderb}
+%\put(46, 51.4){\npuheadera}
+%\put(0, 0){\npuheaderb}
+%\put(46, 0){\npuheadera}
 
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-        \put(0,49.1){\npuheaderb}
-        \put(41.5,49.1){\npuheadera}
-        \put(5,27){\npulogo}
-        
-        \put(33,38){\Large\fullnameEN}
-        \put(40,33){\textsc{\scriptsize \ptitleEN}}
-        \put(26.5,25){\textsc{\scriptsize \affEN}}
+  \put(5,    40){\npulogo}
+  \put(15,   44){\large\textcolor[rgb]{0,0.25,0.56}{\NPUCN}}
+  \put(15,   41){\qihaos \textcolor[rgb]{0,0.25,0.56}{\textsc{Northwestern Polytechnical University}}}
 
-        \put(26,24){\color[rgb]{0.6,0.6,0}\line(1,0){59}}
+  \put(78,   38){\xianbmy}
+  \put(76,   36){\textsc{\tiny \textcolor[rgb]{0.69,0.6,0.47}{Xi'an China}}}
+  \put(77,   34){\textsc{\tiny \textcolor[rgb]{0.69,0.6,0.47}{中国\ 西安}}}
 
-        \put(70, 8.2){\linkedinQR}
-       
-%        \put(12,17){\tiny \textcolor[rgb]{0.15,0.15,0.15}{\labEN}}
-%        \put(12,14.5){\tiny \textcolor[rgb]{0.15,0.15,0.15}{\schoolEN}}
-%        \put(12,12){\tiny \textcolor[rgb]{0.15,0.15,0.15}{\addrEN}}
-%        \put(12,9.5){\tiny \textcolor[rgb]{0.15,0.15,0.15}{\labsiteEN}}
+  \put(31,   30.5){\normalsize\fullnameEN}
+  \put(57,   30.5){\scriptsize(\fullnameCN)}
+  \put(37,   27){\textsc{\scriptsize \ptitleEN}}
 
-        \put(6,18){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\labEN}}
-        \put(6,15){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\schoolEN}}
-        \put(6,12){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\addrEN}}
-        \put(6,9){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\labsiteEN}}
+  \put(25,   21){\textsc{\scriptsize \affEN}}
+  \put(25,   20){\color[rgb]{0.6,0.6,0}\line(1,0){58}}
 
-        \linethickness{1pt} 
-        \put(4,5){\color[rgb]{0.6,0.6,0}\line(1,0){81}}
- 
-        \put(10,2){\textsc{\tiny Mobile:}}
-        \put(18,2){\tiny \mobileEN}
+  \put(6,    20){\linkedinQR}
 
-        \put(42,2){\textsc{\tiny Email:}}
-        \put(49,2){\tiny \emailEN}
- 
-        \end{picture}} }
-  \end{picture}
-  \newpage
-  \begin{picture}(220,240)(-3,0)
-  \multiput(0,0)(0, 56){4}{%
-    \multiput(0,0)(107,0){2}{
-      \begin{picture}(89,54)(0,0)     
-       \put(0, 0){\color{red}\line(0,1){10}}
-       \put(0, 0){\color{red}\line(1, 0){10}}
+  \put(6,    13){\textsc{\tiny Lab:}}
+  \put(11.8, 13){\tiny \textcolor[rgb]{0.15,0.15,0.15}{\labEN}}
+  \put(60,   13){\textsc{\tiny Mobile:}}
+  \put(68,   13){\tiny \mobileEN}
 
-       \put(0, 54){\color{green}\line(0,-1){10}}
-       \put(0, 54){\color{green}\line(1, 0){10}}
+  \put(11.8, 11){\tiny \textcolor[rgb]{0.15,0.15,0.15}{\schoolEN}}
+  \put(60,   11){\textsc{\tiny Email:}}
+  \put(68,   11){\tiny \emailENa}
 
-       \put(89, 0){\color{cyan}\line(0,1){10}}
-       \put(89, 0){\color{cyan}\line(-1, 0){10}}
-              
-       \put(89, 54){\color{blue}\line(0,-1){10}}
-       \put(89, 54){\color{blue}\line(-1,0){10}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \put(0,49.1){\npuheaderb}
-        \put(41.5,49.1){\npuheadera}
-       \put(5,27){\npulogo}
-        
-        \put(44,37){\Large\fullnameCN}
-        \put(47,32){\textsc{\scriptsize \ptitleCN}}
-        \put(36,25){\textsc{\normalsize \affCN}}
+  \put(6,    9){\textsc{\tiny Addr:}}
+  \put(11.8, 9){\tiny \textcolor[rgb]{0.15,0.15,0.15}{\addrEN}}
+  \put(68,   9){\tiny \emailENb}
 
-        \put(34,24){\color[rgb]{0.6,0.6,0}\line(1,0){51}}
+  \put(6,    7){\textsc{\tiny Site:}}
+  \put(11.8, 7){\tiny  \textcolor[rgb]{0.15,0.15,0.15}{\labsiteEN}}
+\end{picture}
 
-        \put(70, 8.2){\linkedinQR}
-       
-        \put(6,18){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\labCN}}
-        \put(6,15){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\schoolCN}}
-        \put(6,12){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\addrCN}}
-        \put(6,9){\scriptsize \textcolor[rgb]{0.15,0.15,0.15}{\labsiteCN}}
+\newpage
 
-        \linethickness{1pt}
-        \put(4,5){\color[rgb]{0.6,0.6,0}\line(1,0){81}}
+\begin{picture}(92,56)(6.1,-12.9)
 
-        \put(10,2){\textsc{\tiny Mobile:}}
-        \put(18,2){\tiny \mobileCN}
+  \put(33,     42){\textsc{\footnotesize Research Interests}}
+  \put(32.5,   37){\tiny Object Recognition and Tracking}
+  \put(30,     34){\tiny Deep Neural Network / Deep Learning}
+  \put(38,     31){\tiny Machine Learning}  
 
-        \put(42,2){\textsc{\tiny Email:}}
-        \put(49,2){\tiny \emailCN}
+  \put(17,   20){\normalsize Hope to work with excellent researchers}  
+  \put(28,   16){\normalsize in my postdoctoral period}  
+  \put(45,   12){:)}  
 
-        \end{picture}} }
-  \end{picture}
+    
+\end{picture}
+
 \end{document}
 
 
